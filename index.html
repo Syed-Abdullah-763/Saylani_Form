@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Saylani form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div id="img">
+            <img src="./pictures/logo.png" alt="">
+        </div>
+
+        <div id="content1">
+            <div id="links">
+                <a href="https://www.facebook.com/saylani.smit" target="_blank"><i class="fa-brands fa-square-facebook"
+                        id="fb"></i></a>
+                <a href="https://www.instagram.com/saylanimassittraining" target="_blank">
+                    <i class="fa-brands fa-square-instagram" id="instagram"></i></a>
+                <a href="https://www.youtube.com/@SaylaniMassITTraining" target="_blank"><i class="fa-brands fa-youtube"
+                        id="yt"></i></a>
+            </div>
+
+            <h1>Registration Form-SMIT</h1>
+
+            <a href="#">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Student Portal</a>
+        </div>
+        <h5>Services-Education-Registration</h5>
+        <div id="content2">
+            <a href="#">Registration</a>
+            <a href="#">ID Card</a>
+            <a href="#">Results</a>
+        </div>
+    </header>
+
+    <div id="hrLine"></div>
+
+    <main>
+        <form action="">
+            <div class="line">
+                <div id="country">
+                    <label for="country">Select Country</label>
+                    <select name="country" id="country" required>
+                        <option value="" selected disabled>Select Your Country</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Turkey">Turkey</option>
+                    </select>
+                </div>
+
+                <div id="city">
+                    <label for="country">Select City</label>
+                    <select name="country" id="country" required>
+                        <option value="" selected disabled>Select Your City</option>
+                        <option value="Pakistan">Karachi</option>
+                        <option value="Turkey">Lahore</option>
+                        <option value="Turkey">Islamabad</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <div class="line">
+                <div id="course">
+                    <label for="course">Select Course or Event</label>
+                    <select name="course" id="course" required>
+                        <option value="" selected disabled>Select Your Course</option>
+                        <option value="WMA">WMA</option>
+                        <option value="Graphic Designing">Graphic Designing</option>
+                    </select>
+                </div>
+
+                <div id="proficiency">
+                    <label for="proficiency">Select Your Computer Proficiency</label>
+                    <select name="proficiency" id="proficiency" required>
+                        <option value="" selected disabled>Computer Profeciency</option>
+                        <option value="non">Non</option>
+                        <option value="biginner">Biginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="line">
+                <div class="name">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                </div>
+
+                <div class="fathername">
+                    <label for="fatherName">Father's Name</label>
+                    <input type="text" name="name" id="fatherName" placeholder="Enter Your Father Name" required>
+                </div>
+            </div>
+
+
+            <div class="line">
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="fathername">
+                    <label for="number">Phone Number</label>
+                    <input type="number" name="nember" id="number" placeholder="Enter Your Phone Number" maxlength="11"
+                        minlength="11" required>
+                </div>
+            </div>
+
+
+
+            <div class="line">
+                <div class="CNIC">
+                    <label for="cnic">CNIC</label>
+                    <input type="number" name="cnic" id="cnic" placeholder="CNIC" required>
+                </div>
+
+                <div class="father_cnic">
+                    <label for="father_cnic">Father's CNIC</label>
+                    <input type="number" name="father_cnic" id="father_cnic" placeholder="Father's CNIC" required>
+                </div>
+            </div>
+
+
+            <div class="line">
+                <div class="dateOfBirth">
+                    <label for="DOB">Date Of Birth</label>
+                    <input type="date" name="DOB" id="DOB" required>
+                </div>
+
+                <div class="education">
+                    <label for="education">Select Your Highest Education</label>
+                    <select name="education" id="education" required>
+                        <option value="#" disabled selected>Select Your Education</option>
+                        <option value="matric">Matric</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="graduate">Graduate</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="singLine">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Address">
+            </div>
+
+
+            <div class="singleLineimg">
+                <label for="image" id="pic">Picture</label>
+                <div id="textInput">
+                    <input type="file" id="image" name="image" required>
+                    <div id="text">
+                        <p>With white or blue background</p>
+                        <p>File size must be less than 1MB</p>
+                        <p>File type: jpg, jpeg, png</p>
+                        <p>Upload your recent passport size picture</p>
+                        <p>Your Face should be clearly visible without any Glasses</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="singLineRadoi">
+                <h4>Gender:</h4>
+
+                <label for="female">Female
+                    <input type="radio" name="gender" id="female">
+                </label>
+
+                <label for="male">Male
+                    <input type="radio" name="gender" id="male">
+                </label>
+            </div>
+
+            <div class="singLineRadoi">
+                <h4>Do You Have Laptop?</h4>
+
+                <label for="yes">Yes
+                    <input type="radio" name="laptop" id="yes">
+                </label>
+
+                <label for="no">No
+                    <input type="radio" name="laptop" id="no">
+                </label>
+            </div>
+
+
+            <div class="singleLineBtn">
+                <button>SBMIT</button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
